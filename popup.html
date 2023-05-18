@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CaptchaKill</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #303030;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 300px;
+      /* border: 2px solid #fff;
+      border-radius: 8px; */
+      box-sizing: border-box;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .refresh-icon {
+      width: 80px;
+      height: 80px;
+    }
+
+    .refresh-icon:hover {
+      filter: brightness(80%);
+    }
+
+    .refresh-text {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 24px;
+    }
+
+    .refresh-text a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #fff;
+      margin: 20px 0;
+    }
+
+    .made-by {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="refreshButton" style="background-color: transparent; border: none;">
+      <img class="refresh-icon" src="https://img.icons8.com/glyph-neue/64/FFFFFF/connection-sync.png" alt="connection-sync">
+    </button>
+    <div class="refresh-text">
+      <a href="#" id="refreshLink">Remove the image captcha<br>on this page</a>
+    </div>
+    <hr>
+    <div class="made-by">Made with <3 by Osh</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

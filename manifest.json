@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "CaptchaKill",
+  "version": "1.0",
+  "description": "Reloads VTOP to bypass image select captchas and use internal text captchas.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://vtop.vit.ac.in/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vtop.vit.ac.in/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
