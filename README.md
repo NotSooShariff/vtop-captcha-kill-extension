@@ -1,10 +1,12 @@
 # CaptchaKill Chrome Extension
 
+> **💡 Note -** Encountering various challenges in this project led me to discover a local workaround. As I have no intentions to pursue further development on this extension, I will proceed to archive this repository.
+
 ## Overview
 CaptchaKill is a powerful Chrome extension designed to streamline the login process on our college's website. It leverages a minor vulnerability that was discovered, allowing users to bypass the image-based recaptcha and significantly reduce the time taken to log into their accounts. This extension, in conjunction with the VTOP Captcha Solver extension, creates a seamless and instant login experience.
 
 ## Vulnerability Details
-The vulnerability was observed on our college's website, where the login process employed two types of captchas. The first one was an internal captcha developed by the college, while the second was an externally sourced recaptcha. It was noticed that upon reloading the page with the recaptcha, it would either switch to the text-based captcha or disappear altogether. This behavior led to the development of the CaptchaKill extension, utilizing this vulnerability to optimize the login process.
+The vulnerability was observed on our college's website, where the login process employed two types of captchas. The first one was an internal captcha developed by the college, while the second was an externally sourced recaptcha. It was noticed that upon reloading the page with the Recaptcha, it would either switch to the text-based captcha or disappear altogether. This behavior led to the development of the CaptchaKill extension, utilizing this vulnerability to optimize the login process.
 
 ## Features
 - Automatically bypasses the recaptcha on the college website login page
